@@ -1,0 +1,73 @@
+@import url('./fontFamily.css');
+
+:root {
+    --text-dark: hsl(207, 26%, 17%);
+    --bg-light: hsl(0, 0%, 94%);
+    --ele-light: hsl(0, 0%, 100%);
+    --shadow-dark: rgba(190, 190, 190, 0.5);
+    --shadow-darker: rgba(82, 82, 82, 0.6);
+    --ele-hover-blue: rgba(55, 175, 255, 0.3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    overflow-x: hidden;
+}
+
+
+.icon-x-sm {
+    width: 10px;
+}
+
+.icon-sm {
+    width: 14px;
+}
+
+.icon-md{
+    width: 16px;
+}
+
+.icon-lg{
+    width: 18px;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.selectReset {
+    -o-appearance: none;
+   -ms-appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.btn {
+    text-decoration: none;
+    display: flex;  
+    align-items: center;
+    user-select: none;
+    padding: .4rem 1rem;
+    font-size: 10pt;
+    width: max-content;
+    border: none;
+    cursor: pointer;
+    font-family: 'NunitoSans SemiBold';
+    color: var(--text-dark);
+    background-color: var(--ele-light);
+    box-shadow: 0 0 10px var(--shadow-darker);
+}
